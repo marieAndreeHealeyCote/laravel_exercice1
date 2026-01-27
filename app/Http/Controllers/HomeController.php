@@ -15,6 +15,11 @@ class HomeController extends Controller
     }
 
     // (les autres méthodes déjà utilisées)
+    public function about()
+    {
+        return view('about');
+    }
+
     public function contact()
     {
         return view('contact');
