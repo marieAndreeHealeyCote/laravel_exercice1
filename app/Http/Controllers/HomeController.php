@@ -29,10 +29,6 @@ class HomeController extends Controller
             'message' => 'required|string',
         ]);
 
-        // Traitement (ex : sauvegarde, email, etc.)
-
-        return back()->with('success', 'Message envoyé avec succès !');
-
         // Récupération des données envoyées
         $name = $request->input('name');
         $email = $request->input('email');
