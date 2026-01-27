@@ -3,24 +3,26 @@
 @section('title', 'Contact')
 
 @section('content')
-<section class="card">
+<div class="card mb-4 shadow-sm p-4">
     <h2>Formulaire de contact</h2>
-
     <form method="POST" action="{{ route('contact.send') }}">
         @csrf
+        <div class="mb-3">
+            <label for="name" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
 
-        <label>Nom</label>
-        <input type="text" name="name" required>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
 
-        <label>Email</label>
-        <input type="email" name="email" required>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
 
-        <label>Message</label>
-        <textarea name="message" required></textarea>
-
-        <button type="submit" class="btn btn-primary">
-            Envoyer
-        </button>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
     </form>
-</section>
-@endsection
+</div>
+@endsection('content')
