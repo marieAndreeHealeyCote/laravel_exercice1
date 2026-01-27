@@ -1,0 +1,83 @@
+/* =========================
+   MENU ACTIF
+========================= */
+nav a.active {
+    text-decoration: underline; /* souligne le lien actif */
+    font-weight: bold;
+    color: #ffd700 !important; /* couleur dorée */
+}
+
+/* =========================
+   BOUTONS UNIFORMES
+========================= */
+.btn {
+    width: fit-content;
+    font-size: 0.9rem; /* taille du texte */
+    padding: 0.35rem 0.75rem; /* hauteur et largeur uniformes */
+    transition:
+        background 0.3s,
+        transform 0.2s;
+    cursor: pointer;
+    border-radius: 0.5rem; /* arrondi léger */
+}
+
+.btn:hover {
+    transform: scale(1.03); /* léger zoom au hover */
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.5); /* halo focus identique */
+}
+
+/* =========================
+   CARDS
+========================= */
+.card {
+    border-radius: 0.75rem; /* arrondi des cards */
+    padding: 1.5rem; /* padding interne */
+    margin-bottom: 1.5rem; /* espacement vertical */
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    font-size: 0.9rem;
+}
+
+/* =========================
+   HEADER
+========================= */
+header h1 {
+    font-weight: bold;
+}
+
+header nav a {
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffeb3b !important; /* jaune au survol */
+}
+
+/* =========================
+   FORMULAIRES
+========================= */
+form input,
+form textarea {
+    border-radius: 0.5rem; /* arrondi des champs */
+}
+
+/* =========================
+   RESPONSIVE CUSTOM
+========================= */
+@media (max-width: 576px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav a {
+        margin-bottom: 0.5rem;
+    }
+}
