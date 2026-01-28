@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layouts.master')
 
 @section('title', 'À propos')
 
@@ -35,4 +35,4 @@
     </ul>
     <a href="{{ route('home') }}" class="btn btn-primary">Retour à l’accueil</a>
 </div>
-@endsection('content')
+@endsection

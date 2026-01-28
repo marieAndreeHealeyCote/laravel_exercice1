@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layouts.master')
 
 @section('title', 'Contact')
 
@@ -25,4 +25,4 @@
         <button type="submit" class="btn btn-primary">Envoyer</button>
     </form>
 </div>
-@endsection('content')
+@endsection

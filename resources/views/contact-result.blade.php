@@ -1,4 +1,4 @@
-@extends('master')
+@extends('layouts.master')
 
 @section('title', 'Résultat du contact')
 
@@ -10,4 +10,4 @@
     <p><strong>Message :</strong> {{ $message }}</p>
     <a href="{{ route('contact') }}" class="btn btn-primary">Retour</a>
 </div>
-@endsection('content')
+@endsection
